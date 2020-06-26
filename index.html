@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="stylesheet" href="./styles.css">
+        <title>Federated Learning Infrastructure</title>
+    </head>
+    <body>
+        <div id="root">
+            <div id='header'>
+                <span id="title">FEDERATED LEARNING INFRASTRUCTURE</span>
+            </div>
+            <div id='content'>
+                <div id='server_container'>
+                    <div id='server'>
+                        <span class="heading">GLOBAL MODEL</span>
+                        <span>
+                        <button id="button">START SERVER</button>
+                        <button id="button">STOP SERVER</button>
+                        </span>
+                        <span class="network_info_server">
+                            <span class="info_title">BASH INFORMATION & STATUS MESSAGES</span>
+                            <span id="message">
+                                notification : start federated engine
+                            </span>
+                            <span id="status">
+                                server status : inactive
+                            </span>
+                            <span id="accuracy">
+                                global model accuracy : 0%
+                            </span>
+                            <span id="io">
+                                SAMPLE INPUT
+                            </span>
+                            <span id="io">
+                                SAMPLE OUTPUT
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div id='nodes'>
+                    <div class='node'>
+                        <span class="heading">DEVICE 1</span>
+                        <span class="info">
+                        <span class="info_title">SERVER COMMANDS : </span>
+                        <span id="list">
+                            <span>Enter "start" to receive training data</span>
+                            <span>Enter "end" to turn off node</span>
+                        </span>
+                        </span>
+                        <button id="button">START NODE DEVICE</button>
+                        <input type="text" placeholder="Enter Server Command"></input>
+                        <span class="network_info">
+                            <span class="info_title">BASH INFORMATION & STATUS MESSAGES</span>
+                            <span id="message">
+                                notification : start node device
+                            </span>
+                            <span id="status">
+                                device status : inactive
+                            </span>
+                            <span id="accuracy">
+                                model accuracy : 0%
+                            </span>
+                        </span>
+                    </div>
+                    <div class='node'>
+                        <span class="heading">DEVICE 2</span>
+                        <span class="info">
+                            <span class="info_title">SERVER COMMANDS : </span>
+                            <span id="list">
+                                <span>Enter "start" to receive training data</span>
+                                <span>Enter "end" to turn off node</span>
+                            </span>
+                        </span>
+                        <button id="button">START NODE DEVICE</button>
+                        <input type="text" placeholder="Enter Server Command"></input>
+                        <span class="network_info">
+                            <span class="info_title">BASH INFORMATION & STATUS MESSAGES</span>
+                            <span id="message">
+                                notification : start node device
+                            </span>
+                            <span id="status">
+                                device status : inactive
+                            </span>
+                            <span id="accuracy">
+                                model accuracy : 0%
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </body>
+</html>
